@@ -38,6 +38,8 @@ export default {
             if (value === 'John Doe') {
                 console.log("test")
                 return "Paavo Pesusieni"
+            } else {
+                return value
             }
         }
     },
