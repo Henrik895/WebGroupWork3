@@ -1,17 +1,24 @@
 <template>
     <div id="browse">
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <Searchbar/>
+        <section class="main-container"></section>
     </div>
 </template>
 
 <script>
+import Searchbar from './Searchbar'
 export default {
-    name: 'Browse'
+    name: 'Browse',
+    components: {
+        Searchbar
+    },
+    computed: {
+        getProfiles() {
+            return this.$store.getters.get_profiles
+        }
+    }
 }
 </script>
 
 <style scoped>
-h1 {
-    color: red;
-}
 </style>
