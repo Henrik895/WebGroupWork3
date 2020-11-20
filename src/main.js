@@ -46,15 +46,15 @@ const store = new Vuex.Store({
   actions: {
     fetch_user({ commit }) {
       axios.get('https://private-anon-2dd1fa3c0e-wad20postit.apiary-mock.com/users/1')
-      .then(response => {commit('set_user', response.data)})
+      .then(res => {commit('set_user', res.data)})
     },
     fetch_profiles({ commit }) {
       axios.get('https://private-anon-2dd1fa3c0e-wad20postit.apiary-mock.com/profiles')
-      .then(response => {commit('set_profiles', response.data)})
+      .then(res => {commit('set_profiles', res.data)})
     },
     fetch_posts({ commit }) {
       axios.get('https://private-anon-2dd1fa3c0e-wad20postit.apiary-mock.com/posts')
-      .then(response => {commit('set_posts', response.data)})
+      .then(res => {commit('set_posts', res.data)})
     }
   }
 })

@@ -3,7 +3,7 @@
         <span class="post-author">
             <span class="post-author-info">
                 <img :src="authorAvatar" :alt="authorName"/>
-                <small>{{authorName}}</small>
+                <small>{{authorName | noJohnDoe}}</small>
             </span>
             <small>{{postTime}}</small>
         </span>
@@ -30,22 +30,14 @@ export default {
     components: {
         Like
     },
-    data() {
-        return {
-            liked: false
-        }
-    },
     props: {
         postData: Object
     },
-    methods: {
-        like: function() {
-            if (this.liked === false) {
-                this.liked = true
-                document.getElementsByClassName("like-button")[0].classList.add("liked")
-            } else {
-                this.liked = false
-                document.getElementsByClassName("like-button")[0].classList.remove("liked")
+    filters: {
+        noJohnDoe: function(value) {
+            if (value === 'John Doe') {
+                console.log("test")
+                return "Paavo Pesusieni"
             }
         }
     },
