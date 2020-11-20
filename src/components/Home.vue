@@ -15,7 +15,7 @@ export default {
     name: 'Home',
     components: {
         Searchbar,
-        Post
+        Post,
     },
     computed: {
         getPosts: function() {

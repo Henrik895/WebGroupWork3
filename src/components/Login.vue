@@ -1,6 +1,5 @@
 <template>
-    <div id="home">
-            <section class="login-page">
+    <section class="login-page">
       <section id="login-container">
         <div>
           <h1>Welcome to postIt!</h1>
@@ -34,7 +33,6 @@
         </div>
       </section>
     </section>
-    </div>
 </template>
 
 <script>
@@ -49,7 +47,31 @@ export default {
 </script>
 
 <style scoped>
-#home {
-    margin-top: 6%;
+* {
+    margin-top: 3%;
+}
+.login-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-container {
+    background-image: url(../assets/logo.png);
+    background-size: 20% auto;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    min-width: 25%;
+    padding: 45px 45px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
+    text-align: center;
+}
+
+#login-container form div > input {
+    padding: 8px 16px;
+    margin: 4px 0;
 }
 </style>
