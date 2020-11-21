@@ -41,7 +41,6 @@ export default {
             if (this.show === false) {
                 document.getElementsByClassName('drop-down-container')[0].style.display = 'inline'
                 this.show = true
-                console.log(this.$store.getters.get_posts)
             } else {
                 this.show = false
                 document.getElementsByClassName('drop-down-container')[0].style.display = 'none'
