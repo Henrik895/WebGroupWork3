@@ -27,4 +27,11 @@ export default {
 
 <style scoped>
 
+@media screen and (max-width: 800px) {
+  .main-container {
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+}
+
 </style>

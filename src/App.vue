@@ -17,6 +17,7 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 * {
     font-family: 'Roboto Slab', serif;
     outline: none;
@@ -53,10 +54,12 @@ button:hover {
 }
 
 .main-container {
-    width: 50%;
-    min-height: 100%;
-    margin: auto auto;
-    padding: 90px 15px 15px 15px;
-    background-color: #ffffff;
+  width: 50%;
+  min-height: 100%;
+  margin: auto auto;
+  padding: 90px 15px 15px 15px;
+  background-color: #ffffff;
+  transition-duration: 0.5s;
 }
+
 </style>

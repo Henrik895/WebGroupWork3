@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .profile {
-    width: 45%;
+    width: 47.5%;
     display: inline-block;
     border: 1px solid #dedede;
     border-radius: 5px;

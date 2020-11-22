@@ -9,7 +9,7 @@
         </span>
         <div v-if="postMedia !== null" class="post-image">
             <img v-if="postMedia.type === 'image'" :src="postMedia.url" :alt="postText"/>
-            <video controls v-else>
+            <video controls v-if="postMedia.type === 'video'">
                 <source type="video/mp4" :src="postMedia.url">
             </video>
         </div>
