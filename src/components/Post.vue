@@ -74,7 +74,7 @@ export default {
 }
 
 .post .post-author {
-    padding: 10px;
+    padding: 15px;
 }
 
 .post .post-author::after {
@@ -95,13 +95,15 @@ export default {
     border-radius: 100%;
     object-fit: cover;
     object-position: top;
-    margin: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
 
 .post .post-author .post-author-info small {
     position: absolute;
-    top: 10px;
-    left: 35px;
+    top: 15px;
+    left: 45px;
 }
 
 .post .post-author .post-author-info + small {

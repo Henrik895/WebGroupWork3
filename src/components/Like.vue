@@ -15,11 +15,7 @@ export default {
     },
     methods: {
         like: function() {
-            if (this.isLiked === false) {
-                this.isLiked = true
-            } else {
-                this.isLiked = false
-            }
+            this.isLiked = this.isLiked === false;
         }
     }
 }

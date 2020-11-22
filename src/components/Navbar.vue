@@ -1,5 +1,5 @@
 <template>
-    <div id="searchbar">
+    <div id="navbar">
         <header>
         <nav>
             <div class="logo-container">
@@ -30,7 +30,7 @@
 
 <script>
 export default {
-    name: 'Searchbar',
+    name: 'Navbar',
     data() {
         return {
             show: false

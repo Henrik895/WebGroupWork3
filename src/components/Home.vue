@@ -1,6 +1,6 @@
 <template>
     <div id="home">
-        <Searchbar/>
+        <Navbar/>
         <section class="main-container">
             <Post v-for="(post, index) in getPosts" :key="index" :postData="post"/>
         </section>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import Searchbar from './Searchbar'
+import Navbar from './Navbar'
 import Post from './Post'
 
 export default {
     name: 'Home',
     components: {
-        Searchbar,
+        Navbar,
         Post,
     },
     computed: {
