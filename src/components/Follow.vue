@@ -28,11 +28,11 @@ export default {
 <style scoped>
 .follow-button{
     background-color: #82008f;
+    border: 1px solid #82008f;
 }
 
 .follow-button.followed{
     background-color: #ffffff;
-    border: 1px solid #82008f;
     color: #82008f;
 }
 </style>
